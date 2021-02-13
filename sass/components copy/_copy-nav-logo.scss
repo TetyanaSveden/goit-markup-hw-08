@@ -1,0 +1,29 @@
+.web-color {
+  color: $text-color-lightblue;
+}
+.studio-color {
+  color: $text-color-black;
+  margin-right: 93px;
+}
+.text-decor {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.nav-top {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  .head-items {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

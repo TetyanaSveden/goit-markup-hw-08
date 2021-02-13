@@ -1,5 +1,13 @@
 .phonesvg {
-  display: none;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+  transition-property: fill;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    transition: $transition;
+  }
 }
 .head {
   justify-content: space-between;

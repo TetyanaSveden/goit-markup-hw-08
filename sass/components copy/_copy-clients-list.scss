@@ -1,0 +1,29 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  fill: $text-ikons-grey;
+}
+.client-links {
+  width: 170px;
+  height: 90px;
+}
+.link-size {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $text-ikons-grey;
+  border-radius: 4px;
+  color: $text-ikons-grey;
+  transition: $transition;
+  transition-property: color, border;
+  &:hover,
+  &:focus {
+    color: $text-color-lightblue;
+    border: 1px solid $blue-light-color;
+  }
+}
+.clients-color {
+  fill: currentColor;
+}
