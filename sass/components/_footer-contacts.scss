@@ -1,0 +1,48 @@
+.foter-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-background-color;
+}
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  color: $main-background-color;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-web {
+  color: $text-color-lightblue;
+}
+.address-decor {
+  color: $main-background-color;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+.footer-mail,
+.footer-phone {
+  text-decoration: none;
+  color: $text-color-grey-through;
+  transition: $transition;
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: $text-color-lightblue;
+    transition: $transition;
+    transition-property: color;
+  }
+  &:hover,
+  &:focus {
+    color: $text-color-lightblue;
+    transition: $transition;
+  }
+}
+.footer-contakt {
+  margin-bottom: 9px;
+}

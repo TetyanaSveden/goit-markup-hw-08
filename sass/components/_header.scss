@@ -1,0 +1,21 @@
+.phonesvg {
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+  transition-property: fill;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    transition: $transition;
+  }
+}
+.head {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.header-color {
+  background: $main-background-color;
+  border-bottom: 1px solid $line-color;
+  width: 100%;
+}
