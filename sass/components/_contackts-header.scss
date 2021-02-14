@@ -1,22 +1,64 @@
 .phone-color {
-  color: $text-color-grey;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: $transition;
-  transition-property: color, fill;
-  &:hover,
-  &:focus {
-    color: $text-color-lightblue;
-    fill: currentColor;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    color: $text-color-grey;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: $transition;
+    transition-property: color, fill;
+    &:hover,
+    &:focus {
+      color: $text-color-lightblue;
+      fill: currentColor;
+      transition: $transition;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    color: $text-color-grey;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: $transition;
+    transition-property: color, fill;
+    &:hover,
+    &:focus {
+      color: $text-color-lightblue;
+      fill: currentColor;
+      transition: $transition;
+    }
   }
 }
+.nav-links-contact {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    .head-items {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .links {
   position: relative;
   color: $text-color-dark;

@@ -1,7 +1,7 @@
 .main-section {
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -11,28 +11,106 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $dark-background-color;
+
+  @media screen and (min-width: 768px) {
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $dark-background-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .main-section {
+      background-position: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $dark-background-color;
+    }
+  }
 }
 .owerlay {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .container-flex {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 360px;
+  margin: auto;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 696px;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 .headline {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 42px;
   color: $main-background-color;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-background-color;
+    text-transform: uppercase;
+  }
 }
+/*
+.headline {
+  @media screen and (min-width: 768px) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-background-color;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-background-color;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+} 
+*/
 .order {
   color: $main-background-color;
   background-color: $blue-light-color;

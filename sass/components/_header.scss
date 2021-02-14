@@ -1,13 +1,55 @@
 .phonesvg {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    transition-property: fill;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      transition: $transition;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    transition-property: fill;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      transition: $transition;
+    }
+  }
 }
 .head {
-  justify-content: space-between;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header-color {
   background: $main-background-color;
   border-bottom: 1px solid $line-color;
   width: 100%;
+}
+.menu {
+  background-color: $main-background-color;
+  border: none;
+  &-mobile:hover {
+    fill: $blue-light-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }

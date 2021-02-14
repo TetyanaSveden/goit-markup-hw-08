@@ -3,7 +3,12 @@
 }
 .studio-color {
   color: $text-color-black;
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .text-decor {
   font-family: "Raleway", sans-serif;
@@ -18,12 +23,25 @@
   align-items: center;
 }
 .nav-links {
-  display: flex;
-  align-items: center;
-  .head-items {
-    margin-right: 50px;
-    &:last-child {
-      margin-right: 0;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    .head-items {
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    .head-items {
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

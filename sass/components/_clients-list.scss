@@ -1,11 +1,28 @@
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
   fill: $text-ikons-grey;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    fill: $text-ikons-grey;
+  }
 }
 .client-links {
-  width: 170px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
   height: 90px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 90px;
+  }
 }
 .link-size {
   display: inline-flex;
