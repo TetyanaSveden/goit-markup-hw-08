@@ -5,6 +5,18 @@
   text-align: center;
   margin-bottom: 50px;
 }
+.employees-list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: unset;
+  }
+}
 
 .pic-list {
   width: 370px;
@@ -53,11 +65,17 @@
   padding-bottom: 30px;
 }
 .collegues-list {
-  width: 270px;
-  height: 428px;
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .shadow {
@@ -65,4 +83,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.face {
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 }
