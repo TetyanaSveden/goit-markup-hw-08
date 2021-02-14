@@ -53,3 +53,12 @@
     display: none;
   }
 }
+.menu .iconclose {
+  display: none;
+}
+.menu.is-open .iconclose {
+  display: block;
+}
+.menu.is-open .iconmenu {
+  display: none;
+}
