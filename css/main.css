@@ -784,6 +784,10 @@ textarea {
   padding-bottom: 30px;
 }
 
+.collegues-list {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .collegues-list {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
