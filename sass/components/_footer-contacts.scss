@@ -4,8 +4,14 @@
   background-color: $dark-background-color;
 }
 .flex {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;

@@ -111,6 +111,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,6 +123,10 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.head {
+  position: relative;
 }
 
 .header-color {
@@ -161,6 +166,28 @@ textarea {
 
 .menu.is-open .iconmenu {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    height: 450px;
+  }
+  .mobile-nav.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 .web-color {
@@ -503,12 +530,24 @@ textarea {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .flex {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .logo-footer {
@@ -565,7 +604,14 @@ textarea {
 }
 
 .content-space {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .content-space {
+    margin-right: 70px;
+  }
 }
 
 .footer-title {
@@ -630,8 +676,15 @@ textarea {
 }
 
 .footer-position {
-  display: block;
-  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-position {
+    display: block;
+    margin-right: auto;
+  }
 }
 
 .position-services {
@@ -655,9 +708,9 @@ textarea {
 }
 
 .dimentions {
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   -webkit-box-sizing: border-box;
@@ -675,16 +728,54 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .dimentions {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 12px;
+    outline: transparent;
+  }
+  .dimentions:focus {
+    border: 1px solid rgba(33, 150, 243, 0.9);
+    border-radius: 4px;
+  }
+}
+
 .form-path {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-path {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subscribe {
@@ -702,6 +793,17 @@ textarea {
 .plane {
   fill: #ffffff;
   margin-left: 10px;
+}
+
+.form-titel {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-titel {
+    text-align: center;
+  }
 }
 
 .whatwedo {
