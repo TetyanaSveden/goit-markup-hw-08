@@ -541,6 +541,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .flex {
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -611,6 +612,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .content-space {
     margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -675,6 +678,31 @@ textarea {
   transition-property: background-color;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer-position {
   text-align: center;
   margin-bottom: 60px;
@@ -682,8 +710,10 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer-position {
-    display: block;
-    margin-right: auto;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 93px;
   }
 }
 
@@ -750,31 +780,27 @@ textarea {
   }
 }
 
-.form-path {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 1199px) {
+  .form-path {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .form-path {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -802,7 +828,8 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .form-titel {
-    text-align: center;
+    display: inline-block;
+    text-align: left;
   }
 }
 

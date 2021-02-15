@@ -4,6 +4,8 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
   }
 }
 .footer-title {
@@ -46,4 +48,17 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: $transition;
   transition-property: background-color;
+}
+
+.tablet-footer {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
