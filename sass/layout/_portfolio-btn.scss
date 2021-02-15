@@ -20,15 +20,26 @@
   }
   &-flex {
     margin-right: 8px;
-    margin-bottom: 34px;
     &:last-child {
-      padding-right: 0;
+      margin-right: 0;
     }
   }
 }
 .container-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 .supply-title {
   font-weight: bold;
