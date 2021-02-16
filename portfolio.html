@@ -19,7 +19,7 @@
         <div class="container head">
             <nav class="nav-top">
                 <a href="./index.html" class="studio-color text-decor"><span class="web-color">Web</span>Studio</a>
-                <ul class="nav-links mobile-nav data-menu">
+                <ul class="nav-links">
                     <li class="head-items"><a href="./index.html" class="links">Студия</a></li>
                     <li class="head-items"><a href="./portfolio.html" class="links current">Портфолио</a></li>
                     <li class="head-items"><a href="" class="links">Контакты</a></li>
@@ -36,10 +36,29 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
     <button class="menu is-open" type="button" data-menu-button>
-        <svg width="40px" height="40px" class="menu-mobile">
-            <use class="iconmenu" href="./images/symbol-defs.svg#icon-menu40px"></use>
-            <use class="iconclose" href="./images/symbol-defs.svg#icon-close40px"></use>
-        </svg>
+        <div class="mobile-menu" data-menu>
+        <ul>
+            <li><a href="./index.html" class="mobile-link">Студия</a></li>
+            <li><a href="./portfolio.html" class="mobile-link current">Портфолио</a></li>
+            <li><a href="" class="mobile-link">Контакты</a></li>
+    </ul>
+<div>
+  <ul>
+    <li><a href="tel:380961111111" class="menu-phone">+38 096 111 11 11</a></li>
+    <li><a href="mailto:info@devstudio.com" class="menu-mail">info@devstudio.com</a></li>
+  </ul>
+</div>
+<ul class="mobile-ul">
+  <li class="mobile-soc"><a href="#">Instagram</a></li>
+  <li class="mobile-soc"><a href="#">Twitter</a></li>
+  <li class="mobile-soc"><a href="#">Facebook</a></li>
+  <li class="mobile-soc"><a href="#">LinkedIn</a></li>
+</ul>
+</div>
+<svg width="40px" height="40px" class="menu-mobile">
+    <use class="iconmenu" href="./images/symbol-defs.svg#icon-menu40px"></use>
+    <use class="iconclose" href="./images/symbol-defs.svg#icon-close40px"></use>
+</svg>
     </button>
         </div>
     </header>
@@ -240,7 +259,7 @@
         </form>
     </div>
 </footer>
-<script src="./js/menu.js"></script>
 <script src="./js/modals.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

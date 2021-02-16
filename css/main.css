@@ -135,61 +135,6 @@ textarea {
   width: 100%;
 }
 
-.menu {
-  background-color: #ffffff;
-  border: none;
-}
-
-.menu-mobile:hover {
-  fill: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .iconclose {
-  display: none;
-}
-
-.menu.is-open .iconclose {
-  display: block;
-}
-
-.menu.is-open .iconmenu {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    text-align: left;
-    height: 450px;
-  }
-  .mobile-nav.is-open {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .mobile-nav {
-    display: none;
-  }
-}
-
 .web-color {
   color: #2196f3;
 }

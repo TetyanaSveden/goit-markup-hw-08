@@ -1,0 +1,78 @@
+.menu {
+  background-color: $main-background-color;
+  border: none;
+  &-mobile:hover {
+    fill: $blue-light-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.menu .iconclose {
+  display: none;
+}
+.menu.is-open .iconclose {
+  display: block;
+}
+.menu.is-open .iconmenu {
+  display: none;
+}
+
+.mobile-menu {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #cecece;
+    text-align: left;
+    height: 700px;
+    z-index: 1;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.mobile-link {
+  color: $text-color-black;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.mobile-link.current {
+  color: $blue-light-color;
+}
+.menu-phone {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $blue-light-color;
+}
+.menu-mail {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $text-color-grey;
+}
+.mobile-ul {
+  display: flex;
+}
+.mobile-soc {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
