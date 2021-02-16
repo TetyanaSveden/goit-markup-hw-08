@@ -66,6 +66,10 @@
 }
 .collegues-list {
   display: block;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
