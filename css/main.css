@@ -137,8 +137,13 @@ textarea {
 }
 
 .menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   background-color: #ffffff;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-mobile:hover {

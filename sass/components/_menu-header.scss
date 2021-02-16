@@ -1,6 +1,9 @@
 .menu {
+  display: inline-flex;
   background-color: $main-background-color;
   border: none;
+  margin: 0;
+  padding: 0;
   &-mobile:hover {
     fill: $blue-light-color;
   }
