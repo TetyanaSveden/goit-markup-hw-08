@@ -1232,6 +1232,7 @@ textarea {
 .flex-links-element {
   display: block;
   margin-bottom: 30px;
+  outline: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -1353,6 +1354,18 @@ textarea {
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .textokrak {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .disain {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

@@ -44,6 +44,7 @@
 .flex-links-element {
   display: block;
   margin-bottom: 30px;
+  outline: 1px solid #ececec;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -120,9 +121,18 @@
     transition-property: background-color, transform;
   }
 }
-
 .moving-text {
   font-size: 18px;
   line-height: 28px;
   color: $main-background-color;
+}
+.textokrak {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 45px;
+  }
+}
+.disain {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 }
