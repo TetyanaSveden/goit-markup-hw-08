@@ -95,3 +95,47 @@
   transition: $transition;
   opacity: 1;
 }
+.phonesvg {
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    transition-property: fill;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      transition: $transition;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    transition-property: fill;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      transition: $transition;
+    }
+  }
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*
+.head {
+  position: relative;
+}
+*/
+.header-color {
+  background: $main-background-color;
+  border-bottom: 1px solid $line-color;
+  width: 100%;
+}
