@@ -64,3 +64,31 @@
     display: none;
   }
 }
+.menu-btn .icon-cross {
+  display: none;
+}
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: white;
+  padding: 20px;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

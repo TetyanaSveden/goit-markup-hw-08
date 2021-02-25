@@ -170,6 +170,38 @@ textarea {
   }
 }
 
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+.mobile-menu.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .phone-color {
   display: none;
 }
@@ -356,11 +388,6 @@ textarea {
   }
 }
 
-/*
-.head {
-  position: relative;
-}
-*/
 .header-color {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -368,6 +395,7 @@ textarea {
 }
 
 .main-section {
+  min-width: 480px;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -497,6 +525,7 @@ textarea {
 }
 
 .foter-section {
+  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
