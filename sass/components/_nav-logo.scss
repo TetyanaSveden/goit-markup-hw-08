@@ -21,6 +21,15 @@
 .nav-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    width: unset;
+  }
 }
 .nav-links {
   display: none;
@@ -43,5 +52,15 @@
         margin-right: 0;
       }
     }
+  }
+}
+.menu-btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
