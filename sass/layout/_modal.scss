@@ -7,33 +7,20 @@
   background: rgba(0, 0, 0, 0.219);
   z-index: 3;
   overflow-y: scroll;
+  padding: 15px;
 }
 .modal {
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   background-color: $main-background-color;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-  min-width: 400px;
-  &-close-btn {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: $main-background-color;
-    border: 1px solid rgba(0, 0, 0, 0.103);
-    cursor: pointer;
-    &:hover {
-      color: $text-color-lightblue;
-    }
-  }
+  max-width: 450px;
   @media screen and (min-width: 1200px) {
     position: absolute;
     width: 528px;
@@ -46,21 +33,37 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    &-close-btn {
-      position: absolute;
-      right: 8px;
-      top: 8px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: $main-background-color;
-      border: 1px solid rgba(0, 0, 0, 0.103);
-      cursor: pointer;
-      &:hover {
-        color: $text-color-lightblue;
-      }
-    }
+    max-width: unset;
   }
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: $main-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+  }
+}
+
+.modal-close-btn:hover {
+  color: $text-color-lightblue;
 }
 .is-hidden {
   pointer-events: none;

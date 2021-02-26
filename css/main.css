@@ -534,14 +534,14 @@ textarea {
 }
 
 .container-flex {
-  width: 360px;
+  max-width: 360px;
   margin: auto;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .container-flex {
-    width: 696px;
+    max-width: 696px;
     margin: auto;
     text-align: center;
   }
@@ -549,7 +549,6 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .container-flex {
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1619,36 +1618,21 @@ textarea {
   background: rgba(0, 0, 0, 0.219);
   z-index: 3;
   overflow-y: scroll;
+  padding: 15px;
 }
 
 .modal {
   position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: #ffffff;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  min-width: 400px;
-}
-
-.modal-close-btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.103);
-  cursor: pointer;
-}
-
-.modal-close-btn:hover {
-  color: #2196f3;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1665,7 +1649,25 @@ textarea {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    max-width: unset;
   }
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
   .modal-close-btn {
     position: absolute;
     right: 8px;
@@ -1677,9 +1679,10 @@ textarea {
     border: 1px solid rgba(0, 0, 0, 0.103);
     cursor: pointer;
   }
-  .modal-close-btn:hover {
-    color: #2196f3;
-  }
+}
+
+.modal-close-btn:hover {
+  color: #2196f3;
 }
 
 .is-hidden {
