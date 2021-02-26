@@ -42,9 +42,15 @@ textarea {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -75,11 +81,18 @@ textarea {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-bottom: 32px;
 }
 
 .mobile-link.current {
   color: #2196f3;
+}
+
+.menu-li {
+  margin-bottom: 32px;
+}
+
+.menu-li:last-child {
+  margin-bottom: 0;
 }
 
 .menu-phone {
@@ -225,7 +238,7 @@ textarea {
   cursor: pointer;
   right: 15px;
   z-index: 3;
-  position: absolute;
+  position: fixed;
 }
 
 .menu-btn:hover, .menu-btn:focus {
@@ -252,17 +265,28 @@ textarea {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   background-color: white;
   padding: 40px;
   z-index: 2;
-  left: -15px;
+  overflow-y: scroll;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile-menu.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -462,6 +486,12 @@ textarea {
   border-bottom: 1px solid #ececec;
   width: 100%;
   padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-color {
+    padding: 0;
+  }
 }
 
 .main-section {
@@ -1594,6 +1624,7 @@ textarea {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.219);
+  z-index: 3;
   overflow-y: scroll;
 }
 

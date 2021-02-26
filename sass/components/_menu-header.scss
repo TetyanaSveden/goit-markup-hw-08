@@ -9,10 +9,16 @@
   line-height: 47px;
   letter-spacing: 0.02em;
   color: $text-color-dark;
-  margin-bottom: 32px;
 }
+
 .mobile-link.current {
   color: $blue-light-color;
+}
+.menu-li {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .menu-phone {
   text-decoration: none;
