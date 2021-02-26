@@ -258,6 +258,7 @@ textarea {
   background-color: white;
   padding: 40px;
   z-index: 2;
+  left: -15px;
 }
 
 .mobile-menu.is-open {
