@@ -63,6 +63,10 @@
   background-color: transparent;
   cursor: pointer;
 
+  right: 15px;
+  z-index: 3;
+  position: absolute;
+
   &:hover,
   &:focus {
     fill: $blue-light-color;
@@ -86,8 +90,7 @@
   display: none;
 
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 0;
   width: 100%;
 
   background-color: white;
