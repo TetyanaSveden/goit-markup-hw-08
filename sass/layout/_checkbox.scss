@@ -10,19 +10,36 @@
 }
 .formlink {
   color: $text-color-lightblue;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    color: $text-color-lightblue;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
 }
 .labelcheckbox {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: $text-color-grey;
   align-items: center;
   display: inline-flex;
   &:focus-within {
     outline: 2px solid black;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-color-grey;
+    align-items: center;
+    display: inline-flex;
+    &:focus-within {
+      outline: 2px solid black;
+    }
   }
 }
 .checkbox {

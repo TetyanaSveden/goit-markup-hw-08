@@ -34,14 +34,21 @@
 .modal-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var (--text-color-dark);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var (--text-color-dark);
+    margin-bottom: 30px;
+  }
 }
 .input-form {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -61,9 +68,31 @@
       fill: $text-color-lightblue;
     }
   }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 40px;
+    &:focus + .form-label,
+    &:not(:placeholder-shown) + .form-label {
+      left: 0;
+      transform: translateY(-40px);
+    }
+    &:focus {
+      fill: $text-color-lightblue;
+      border: 1px solid rgba(33, 150, 243, 0.9);
+      border-radius: 4px;
+      ~ .form-icon {
+        fill: $text-color-lightblue;
+      }
+    }
+  }
 }
 .input-comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -81,6 +110,28 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    &:focus {
+      border: 1px solid rgba(33, 150, 243, 0.9);
+      border-radius: 4px;
+      transition: $transition;
+      transition-property: border-color;
+      outline: none;
+    }
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
   }
 }
 .labeltext {
