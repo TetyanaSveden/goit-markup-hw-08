@@ -65,7 +65,7 @@ textarea {
 }
 
 .menu-ul {
-  margin-bottom: auto;
+  margin-bottom: 302px;
 }
 
 .mobile-link {
@@ -253,9 +253,9 @@ textarea {
   top: 100%;
   left: 0;
   width: 100%;
-  margin-bottom: 302px;
   background-color: white;
   padding: 40px;
+  z-index: 2;
 }
 
 .mobile-menu.is-open {
