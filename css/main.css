@@ -515,7 +515,7 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .main-section .main-section {
+  .main-section {
     background-position: center;
     padding-top: 200px;
     padding-bottom: 200px;
