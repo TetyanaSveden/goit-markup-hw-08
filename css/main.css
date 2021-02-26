@@ -746,6 +746,12 @@ textarea {
   transition-property: background-color;
 }
 
+.footerlinks:hover, .footerlinks:focus {
+  background-color: #2196f3;
+  -webkit-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tablet-footer {
     display: -webkit-box;

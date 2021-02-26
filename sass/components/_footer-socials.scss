@@ -48,6 +48,11 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: $transition;
   transition-property: background-color;
+  &:hover,
+  &:focus {
+    background-color: $text-color-lightblue;
+    transition: $transition;
+  }
 }
 
 .tablet-footer {
