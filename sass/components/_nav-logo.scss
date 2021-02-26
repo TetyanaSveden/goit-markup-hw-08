@@ -4,6 +4,7 @@
 .studio-color {
   color: $text-color-black;
   @media screen and (min-width: 768px) {
+    display: block;
     margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
@@ -88,9 +89,10 @@
   top: 100%;
   left: 0;
   width: 100%;
+  margin-bottom: 302px
 
   background-color: white;
-  padding: 20px;
+  padding: 40px;
 
   &.is-open {
     display: block;

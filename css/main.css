@@ -64,6 +64,65 @@ textarea {
   padding-bottom: 94px;
 }
 
+.menu-ul {
+  margin-bottom: auto;
+}
+
+.mobile-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 32px;
+}
+
+.mobile-link.current {
+  color: #2196f3;
+}
+
+.menu-phone {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.menu-mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.mobile-ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.mobile-soc {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-soc {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .web-color {
   color: #2196f3;
 }
@@ -74,6 +133,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .studio-color {
+    display: block;
     margin-right: 88px;
   }
 }
@@ -194,7 +254,7 @@ textarea {
   left: 0;
   width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
 }
 
 .mobile-menu.is-open {
