@@ -71,7 +71,7 @@ textarea {
 }
 
 .menu-ul {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-link {
@@ -236,9 +236,7 @@ textarea {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  right: 15px;
   z-index: 3;
-  position: fixed;
 }
 
 .menu-btn:hover, .menu-btn:focus {
@@ -495,7 +493,6 @@ textarea {
 }
 
 .main-section {
-  min-width: 480px;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -625,7 +622,6 @@ textarea {
 }
 
 .foter-section {
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -1327,7 +1323,6 @@ textarea {
 }
 
 .container-portfolio {
-  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
