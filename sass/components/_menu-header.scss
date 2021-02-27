@@ -50,7 +50,7 @@
 .menu-soc {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $blue-light-color;

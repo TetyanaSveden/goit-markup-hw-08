@@ -130,7 +130,7 @@ textarea {
 .menu-soc {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -831,7 +831,7 @@ textarea {
 
 .dimentions {
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
@@ -850,7 +850,29 @@ textarea {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .dimentions {
+    margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 12px;
+    outline: transparent;
+  }
+  .dimentions:focus {
+    border: 1px solid rgba(33, 150, 243, 0.9);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .dimentions {
     width: 358px;
     height: 50px;
@@ -1623,7 +1645,7 @@ textarea {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 400px;
+  min-width: 320px;
 }
 
 @media screen and (min-width: 1200px) {
